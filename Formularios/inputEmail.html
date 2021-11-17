@@ -1,0 +1,30 @@
+<!-- 
+    <input type="email" />
+
+    Atributos especiais:
+    - multiple
+        * o campo podera receber 1 ou mais emails separados por virgula
+    - minlenght / maxlength
+        * minimo e maximo de caracteres para o campo 
+    - size 
+        * tamanho do campo de acordo com a quantidade de caracteres 
+
+        obs: quase todos os atributos com as mesmas especificações dos outros type.
+
+-->
+
+<form action="">
+
+    <datalist id="emailslist"> 
+        <option>poli@gmail.com.br</option>
+    </datalist>
+
+    <input type="email"
+    placeholder="Email"
+    size="20"
+    list="emailslist"
+    >
+
+    <button type="submit">Enviar</button>
+    
+</form>
