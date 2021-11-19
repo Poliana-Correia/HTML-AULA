@@ -15,11 +15,15 @@
      obs: quase todos os atributos com as mesmas especificações dos outros type
 -->
 
-<form action="">
-    <input type="url"
-    placeholder="http://example.com.br"
-    pattern =".*\.com\.br.*"
-    title="Somente domínios .com.br serão aceitos."
-    >
-    <button type="submit">Enviar</button>
-</form>
+<datalist id="urlsdata"> 
+    <form action="">
+        <input type="url"
+        placeholder="http://example.com.br"
+        pattern =".*\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos."
+        required
+        list="urlsdata"
+        >
+        <button type="submit">Enviar</button>
+    </form>
+</datalist>
