@@ -1,4 +1,5 @@
-//getElementsByClassName()
+// getElementById
+//const element = document.getElementById('meu-blog')
+//console.log(element)
 
-const element = document.getElementsByTagName('meta')
-console.log(element)
+//getElementByClassNamy
