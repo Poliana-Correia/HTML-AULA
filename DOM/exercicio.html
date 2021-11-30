@@ -7,8 +7,7 @@
     initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://unpkg.com/
-    tailwindcss/dist/tailwind.min.css"
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
     rel="stylesheet">
 
 </head>
@@ -28,7 +27,38 @@ flex flex-col items-center justify-center">
              items-center justify-center">
         <div class="p-8 bg-white text-center
         rounded">
-            Tecle ESC para fechar
+        <form action="">
+            <fieldset>
+                <legend>Contato</legend>
+                <div>
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input id="nome" type="text" name="nome" 
+                    placeholder="Nome completo" 
+                    size="30" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input id="email" type="email" name="email"
+                    size="30"
+                    placeholder="Digite seu email"
+                    pattern =".+@gmail\.com"
+                    title="Somente dominios @gmail.com serão aceitos."
+                    required>        
+                </div>
+                <br>
+                <div>
+                    <label for="message">Mensagem</label>
+                    <br>
+                    <textarea id="message" name="message" cols="50" rows="15" minlength="15" maxlength="500"></textarea>
+                </div>
+                <div>
+                    <button id="close" type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
         </div>
     </div>
 
