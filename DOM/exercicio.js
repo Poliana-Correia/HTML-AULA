@@ -21,9 +21,9 @@ document.addEventListener('keydown', function(event) {
     }
 })
 
-const buttonCloseModal = document.getElementById('close')
+//const buttonCloseModal = document.getElementById('close')
 
-buttonCloseModal.onclick = function() {
-    modalWrapper.classList.add('invisible')
-}
+// buttonCloseModal.onclick = function() {
+//     modalWrapper.classList.add('invisible')
+// }
 
